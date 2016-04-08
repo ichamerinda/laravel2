@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^$ /laravel2/public/home [R]
