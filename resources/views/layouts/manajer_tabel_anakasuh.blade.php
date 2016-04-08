@@ -1,11 +1,11 @@
-@extends('includes.donatur_header')
+@extends('includes.manajer_header')
 @section('content')
 
 <section class="wrapper" style='margin-top:60px;display:inline-block;width:100%;padding:15px 0 0 15px;'>
     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
         <div class="page-title">
             <div class="pull-left">
-                <h1 class="title">Tabel Calon Anak Asuh</h1>                            
+                <h1 class="title">Anak Asuh</h1>                            
             </div>
         </div>
     </div>
@@ -13,7 +13,7 @@
     <div class="col-lg-12">
         <section class="box ">
             <header class="panel_header">
-                <h2 class="title pull-left">Data Calon Anak Asuh</h2>
+                <h2 class="title pull-left">Data Anak Asuh</h2>
                 <div class="actions panel_actions pull-right">
                     <i class="box_toggle fa fa-chevron-down"></i>
                     <i class="box_setting fa fa-cog" data-toggle="modal" href="#section-settings"></i>
@@ -75,6 +75,6 @@
                 </section> <!-- END class="wrapper"  --> -->
 
 <script type="text/javascript">
-    $($('ul.wraplist li')[2]).addClass('open');
+    $($('ul.wraplist li')[1]).addClass('open');
 </script>
 @endsection

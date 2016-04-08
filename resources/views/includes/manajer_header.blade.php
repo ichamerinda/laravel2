@@ -21,6 +21,8 @@
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/apple-touch-icon-144-precomposed.png">    <!-- For iPad Retina display -->
 
 
+
+
         <!-- CORE CSS FRAMEWORK - START -->
         <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
         <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -55,8 +57,6 @@
 
 
         <!-- CORE JS FRAMEWORK - START --> 
-        
-        <script src="assets/js/jquery-2.1.4.js" type="text/javascript"></script> 
         <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script> 
         <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script> 
         <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
@@ -64,38 +64,6 @@
         <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script> 
         <script src="assets/plugins/viewport/viewportchecker.js" type="text/javascript"></script>  
         <!-- CORE JS FRAMEWORK - END --> 
-
-    <script type="text/javascript">
-        var state = true;
-        $("document").ready(function(){
-            $("#collapse2").hide()
-          
-            $("#next").click(function(){
-                if(state){
-                    $("#collapse").hide()
-                    $("#collapse2").show()
-                }else{
-                    $("#collapse").hide()
-                    $("#collapse2").show()
-                }
-                state=!state;
-            });
-
-            $("#back").click(function(){
-                if(state){
-                    $("#collapse2").hide()
-                    $("#collapse").show()
-                   
-                }else{
-                    $("#collapse2").hide()
-                    $("#collapse").show()
-                    
-                }
-                state=!state;
-            });
-        });
-    </script>
-
 
     </head>
     <!-- END HEAD -->
@@ -105,6 +73,7 @@
         <!-- START TOPBAR -->
         <div class='page-topbar '>
             <div class='logo-area'>
+
             </div>
             <div class='quick-area'>
                 <div class='pull-left'>
@@ -113,7 +82,9 @@
                             <a href="#" data-toggle="sidebar" class="sidebar_toggle">
                                 <i class="fa fa-bars"></i>
                             </a>
-                        </li>     
+                        </li>
+                       
+                        
                     </ul>
                 </div>      
                 <div class='pull-right'>
@@ -190,24 +161,11 @@
 
                     </div>
                     <!-- USER INFO - END -->
-
-
-
                     <ul class='wraplist'>   
-
-
                         <li class=""> 
-                            <a href="home">
+                            <a href="manajer_home">
                                 <i class="fa fa-dashboard"></i>
                                 <span class="title">Dashboard</span>
-                            </a>
-                        </li>
-                        
-                        <li class=""> 
-                            <a href="admin_form_calonanak">
-                                <i class="fa fa-th"></i>
-                                <span class="title">Form Anak</span>
-                                <!-- <span class="label label-orange nosubmenu">HOT</span> -->
                             </a>
                         </li>
 
@@ -219,27 +177,24 @@
                             </a>
                             <ul class="sub-menu" >
                                 <li>
-                                    <a class="" href="admin_tabel_calonanak">Tabel Calon Anak Asuh</a>
+                                    <a class="" href="manajer_tabel_calonanak">Calon Anak Asuh</a>
                                 </li>
                                 <li>
-                                    <a class="" href="admin_tabel_anakasuh">Tabel Anak Asuh</a>
+                                    <a class="" href="manajer_tabel_anakasuh">Anak Asuh</a>
                                 </li>
                                 <li>
-                                    <a class="" href="admin_tabel_donatur">Tabel Donatur</a>
+                                    <a class="" href="manajer_tabel_donatur">Donatur</a>
                                 </li>
                             </ul>
                         </li>
                        
                         <li class=""> 
-                            <a href="javascript:;">
+                            <a href="manajer_tabel_keuangan">
                                 <i class="fa fa-suitcase"></i>
                                 <span class="title">Keuangan</span>
                                 <span class="arrow "></span>
                             </a>
-                            <ul class="sub-menu" >
-                                <li>
-                                    <a class="" href="admin_form_keuangan">Form Keuangan</a>
-                                </li>
+                            <!-- <ul class="sub-menu" >
                                 <li>
                                     <a class="" href="admin_tabel_keuangan">Tabel Keuangan</a>
                                 </li>
@@ -247,7 +202,7 @@
                                     <a class="" href="admin_laporan_keuangan">Laporan Keuangan</a>
                                 </li>
                                 <li>
-                            </ul>
+                            </ul> -->
                         </li>
                          <li class=""> 
                             <a href="javascript:;">
@@ -257,21 +212,21 @@
                             </a>
                             <ul class="sub-menu" >
                                 <li>
-                                    <a class="" href="admin_chart_calonanak">Calon Anak Asuh</a>
+                                    <a class="" href="manajer_chart_calonanak">Calon Anak Asuh</a>
                                 </li>
                                 <li>
-                                    <a class="" href="admin_chart_anakasuh">Anak Asuh</a>
+                                    <a class="" href="manajer_chart_anakasuh">Anak Asuh</a>
                                 </li>
                                 <li>
-                                    <a class="" href="admin_chart_donatur">Donatur</a>
+                                    <a class="" href="manajer_chart_donatur">Donatur</a>
                                 </li>
                                 <li>
-                                    <a class="" href="admin_chart_keuangan">Keuangan</a>
+                                    <a class="" href="manajer_chart_keuangan">Keuangan</a>
                                 </li>
                             </ul>
                         </li>
-                        <!-- 
-                        <li class=""> 
+                        
+                        <!-- <li class=""> 
                             <a href="javascript:;">
                                 <i class="fa fa-map-marker"></i>
                                 <span class="title">Maps</span>
@@ -284,22 +239,13 @@
                                 <li>
                                     <a class="" href="ui-googlemaps.html">Google Maps</a>
                                 </li>
-                                <li>
-                                    <a class="" href="ui-googlemapfull.html">Advanced Google Maps</a>
-                                </li>
                             </ul>
-                        </li>
- -->
-
+                        </li> -->
                     </ul>
 
                 </div>
                 <!-- MAIN MENU - END -->
-
-
-
-                <div class="project-info">
-
+                <!-- <div class="project-info">
                     <div class="block1">
                         <div class="data">
                             <span class='title'>New&nbsp;Orders</span>
@@ -320,10 +266,7 @@
                         </div>
                     </div>
 
-                </div>
-
-
-
+                </div> -->
             </div>
             <!--  SIDEBAR - END -->
             <!-- START CONTENT -->

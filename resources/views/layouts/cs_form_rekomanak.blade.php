@@ -1,4 +1,4 @@
-@extends('includes.header')
+@extends('includes.cs_header')
 @section('content')
 
 <section class="wrapper" style='margin-top:60px;display:inline-block;width:100%;padding:15px 0 0 15px;'>

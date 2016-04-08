@@ -16,7 +16,7 @@ class IsAdmin
     
     public function handle($request, Closure $next)
     {
-        if(auth()->check() && $request->user()->admin == 3){
+        if(auth()->check() && $request->user()->id_role == 3){
             return $next($request);
         }
         return redirect()->guest('/');

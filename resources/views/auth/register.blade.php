@@ -106,7 +106,7 @@
                         <label for="hak_akses">Hak Akses</label>
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <select class="form-control input-lg m-bot15" name="admin">
+                                <select class="form-control input-lg m-bot15" name="id_role">
                                     <option value="1">Manager</option>
                                     <option value="2">Customer Service</option>
                                     <option value="3">Admin</option>

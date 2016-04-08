@@ -1,11 +1,11 @@
-@extends('includes.donatur_header')
+@extends('includes.header')
 @section('content')
 
 <section class="wrapper" style='margin-top:60px;display:inline-block;width:100%;padding:15px 0 0 15px;'>
     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
         <div class="page-title">
             <div class="pull-left">
-                <h1 class="title">Tabel Calon Anak Asuh</h1>                            
+                <h1 class="title">Calon Anak Asuh</h1>                            
             </div>
         </div>
     </div>
@@ -28,9 +28,10 @@
                     <thead>
                         <tr>
                             <th><i class="fa fa-thumb-tack"></i>&nbsp;Id Calon Anak Asuh</th>
-                            <th><i class="fa fa-key"></i>&nbsp;Nama</th>
+                            <th><i class="fa fa-key"></i>&nbsp;Nama Anak Asuh</th>
                             <th><i class="fa fa-child"></i>&nbsp;Jenis Kelamin</th>
                             <th><i class="fa fa-home"></i>&nbsp;Tempat Lahir</th>
+                            <th><i class="fa fa-home"></i>&nbsp;Tanggal Lahir </th>
                             <th><i class="fa fa-plus"></i>&nbsp;Option</th>
                         </tr>
                     </thead>
@@ -38,13 +39,14 @@
                     <tbody>
                     
                         <tr class="odd gradeX">
-                            <td class="glyphicon-class">Trident</td>
-                            <td>Internet Explorer 4.0</td>
-                            <td>Win 95+</td>
-                            <td>  oo</td>
+                            <td class="glyphicon-class">001</td>
+                            <td>wati</td>
+                            <td>perempuan</td>
+                            <td>jombang</td>
+                            <td>19 maret 1990</td>
                             <td>
-                                <button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button>&nbsp;
-                                <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>&nbsp;
+                                <a href="admin_detail_calonanak"><button class="btn btn-success btn-xs"><i class="fa fa-check"></i></button></a>&nbsp;
+                                <a href="admin_form_calonanak"><button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i></button>&nbsp;
                                 <button class="btn btn-danger btn-xs"><i class="fa fa-trash-o "></i></button>&nbsp;
                             </td>
                         </tr>

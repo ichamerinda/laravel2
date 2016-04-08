@@ -55,8 +55,6 @@
 
 
         <!-- CORE JS FRAMEWORK - START --> 
-        
-        <script src="assets/js/jquery-2.1.4.js" type="text/javascript"></script> 
         <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script> 
         <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script> 
         <script src="assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
@@ -64,38 +62,6 @@
         <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script> 
         <script src="assets/plugins/viewport/viewportchecker.js" type="text/javascript"></script>  
         <!-- CORE JS FRAMEWORK - END --> 
-
-    <script type="text/javascript">
-        var state = true;
-        $("document").ready(function(){
-            $("#collapse2").hide()
-          
-            $("#next").click(function(){
-                if(state){
-                    $("#collapse").hide()
-                    $("#collapse2").show()
-                }else{
-                    $("#collapse").hide()
-                    $("#collapse2").show()
-                }
-                state=!state;
-            });
-
-            $("#back").click(function(){
-                if(state){
-                    $("#collapse2").hide()
-                    $("#collapse").show()
-                   
-                }else{
-                    $("#collapse2").hide()
-                    $("#collapse").show()
-                    
-                }
-                state=!state;
-            });
-        });
-    </script>
-
 
     </head>
     <!-- END HEAD -->
@@ -105,6 +71,7 @@
         <!-- START TOPBAR -->
         <div class='page-topbar '>
             <div class='logo-area'>
+
             </div>
             <div class='quick-area'>
                 <div class='pull-left'>
@@ -113,7 +80,9 @@
                             <a href="#" data-toggle="sidebar" class="sidebar_toggle">
                                 <i class="fa fa-bars"></i>
                             </a>
-                        </li>     
+                        </li>
+                       
+                        
                     </ul>
                 </div>      
                 <div class='pull-right'>
@@ -197,59 +166,29 @@
 
 
                         <li class=""> 
-                            <a href="home">
+                            <a href="home2">
                                 <i class="fa fa-dashboard"></i>
                                 <span class="title">Dashboard</span>
                             </a>
                         </li>
                         
                         <li class=""> 
-                            <a href="admin_form_calonanak">
+                            <a href="admin_form_anak">
                                 <i class="fa fa-th"></i>
-                                <span class="title">Form Anak</span>
+                                <span class="title">Update Profile Saya</span>
                                 <!-- <span class="label label-orange nosubmenu">HOT</span> -->
                             </a>
                         </li>
 
                         <li class=""> 
-                            <a href="javascript:;">
-                                <i class="fa fa-table"></i>
-                                <span class="title">Laporan</span>
-                                <span class="arrow "></span>
-                            </a>
-                            <ul class="sub-menu" >
-                                <li>
-                                    <a class="" href="admin_tabel_calonanak">Tabel Calon Anak Asuh</a>
-                                </li>
-                                <li>
-                                    <a class="" href="admin_tabel_anakasuh">Tabel Anak Asuh</a>
-                                </li>
-                                <li>
-                                    <a class="" href="admin_tabel_donatur">Tabel Donatur</a>
-                                </li>
-                            </ul>
-                        </li>
-                       
-                        <li class=""> 
-                            <a href="javascript:;">
+                            <a href="admin_laporan_keuangan">
                                 <i class="fa fa-suitcase"></i>
-                                <span class="title">Keuangan</span>
+                                <span class="title">Laporan Keuangan</span>
                                 <span class="arrow "></span>
                             </a>
-                            <ul class="sub-menu" >
-                                <li>
-                                    <a class="" href="admin_form_keuangan">Form Keuangan</a>
-                                </li>
-                                <li>
-                                    <a class="" href="admin_tabel_keuangan">Tabel Keuangan</a>
-                                </li>
-                                <li>
-                                    <a class="" href="admin_laporan_keuangan">Laporan Keuangan</a>
-                                </li>
-                                <li>
-                            </ul>
                         </li>
-                         <li class=""> 
+                        
+                        <li class=""> 
                             <a href="javascript:;">
                                 <i class="fa fa-bar-chart"></i>
                                 <span class="title">Charts</span>
@@ -270,7 +209,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- 
+                        
                         <li class=""> 
                             <a href="javascript:;">
                                 <i class="fa fa-map-marker"></i>
@@ -284,12 +223,9 @@
                                 <li>
                                     <a class="" href="ui-googlemaps.html">Google Maps</a>
                                 </li>
-                                <li>
-                                    <a class="" href="ui-googlemapfull.html">Advanced Google Maps</a>
-                                </li>
                             </ul>
                         </li>
- -->
+
 
                     </ul>
 

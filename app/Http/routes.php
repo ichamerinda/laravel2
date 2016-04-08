@@ -50,21 +50,26 @@ Route::group(['middleware' => 'web','auth'], function () {
         if(!Auth::check())
         {
             return view('layouts.dashboard');
+        }else{
+
+            if(Auth::user()->id_role == 1){
+                return view('layouts.admin_home');
+            }
+            elseif (Auth::user()->id_role == 2) {
+                return view('layouts.cs_home');
+            }
+            elseif(Auth::user()->id_role == 3){
+                return view('layouts.manajer_home');
+            }
+            elseif(Auth::user()->id_role == 4){
+                return view('layouts.donatur_home');
+            }else{
+                return view('layouts.login');
+            }
         }
 
-        if(Auth::user()->id_role == 1){
-            return view('layouts.Manajer_home');
-        }
-        elseif (Auth::user()->id_role == 2) {
-            return view('layouts.CustomerService_home');
-        }
-        elseif(Auth::user()->id_role == 3){
-            return view('layouts.Admin_home');
-        }
-        elseif(Auth::user()->id_role == 4){
-            return view('layouts.Donatur_home');
-        }
     });
+    
 });
 
 
@@ -80,50 +85,105 @@ Route::get('/register2', function () {
 });
 
 
-Route::get('/form_anak', function () {
-    return view('layouts.form_calonanak');
+Route::get('/admin_form_calonanak', function () {
+    return view('layouts.admin_form_calonanak');
 });
 
-Route::get('/tabel_calonanak', function () {
-    return view('layouts.tabel_calonanak');
+Route::get('/admin_tabel_calonanak', function () {
+    return view('layouts.admin_tabel_calonanak');
 });
 
-Route::get('/tabel_anakasuh', function () {
-    return view('layouts.tabel_anakasuh');
+Route::get('/admin_detail_calonanak', function () {
+    return view('layouts.admin_detail_calonanak');
 });
-Route::get('/tabel_donatur', function () {
-    return view('layouts.tabel_donatur');
+Route::get('/admin_tabel_anakasuh', function () {
+    return view('layouts.admin_tabel_anakasuh');
 });
-Route::get('/form_keuangan', function () {
-    return view('layouts.form_keuangan');
+Route::get('/admin_tabel_donatur', function () {
+    return view('layouts.admin_tabel_donatur');
 });
-
-Route::get('/tabel_keuangan', function () {
-    return view('layouts.tabel_keuangan');
-});
-Route::get('/laporan_keuangan', function () {
-    return view('layouts.laporan_keuangan');
+Route::get('/admin_form_keuangan', function () {
+    return view('layouts.admin_form_keuangan');
 });
 
-Route::get('/chart_donatur', function () {
-    return view('layouts.chart_donatur');
+Route::get('/admin_tabel_keuangan', function () {
+    return view('layouts.admin_tabel_keuangan');
+});
+Route::get('/admin_laporan_keuangan', function () {
+    return view('layouts.admin_laporan_keuangan');
 });
 
-Route::get('/chart_calonanak', function () {
-    return view('layouts.chart_calonanak');
-});
-Route::get('/chart_anakasuh', function () {
-    return view('layouts.chart_anakasuh');
+Route::get('/admin_chart_donatur', function () {
+    return view('layouts.admin_chart_donatur');
 });
 
-Route::get('/chart_keuangan', function () {
-    return view('layouts.chart_keuangan');
+Route::get('/admin_chart_calonanak', function () {
+    return view('layouts.admin_chart_calonanak');
+});
+Route::get('/admin_chart_anakasuh', function () {
+    return view('layouts.admin_chart_anakasuh');
+});
+
+Route::get('/admin_chart_keuangan', function () {
+    return view('layouts.admin_chart_keuangan');
 });
 
 // Route::get('/home', function () {
 //     return view('layouts.home');
 // });
 
+//START MANAJER
+Route::get('/manajer_home', function () {
+    return view('layouts.manajer_home');
+});
+
+
+Route::get('/manajer_tabel_calonanak', function () {
+    return view('layouts.manajer_tabel_calonanak');
+});
+
+Route::get('/manajer_tabel_anakasuh', function () {
+    return view('layouts.manajer_tabel_anakasuh');
+});
+Route::get('/manajer_tabel_donatur', function () {
+    return view('layouts.manajer_tabel_donatur');
+});
+Route::get('/manajer_tabel_keuangan', function () {
+    return view('layouts.manajer_tabel_keuangan');
+});
+Route::get('/manajer_laporan_keuangan', function () {
+    return view('layouts.manajer_laporan_keuangan');
+});
+
+Route::get('/manajer_chart_donatur', function () {
+    return view('layouts.manajer_chart_donatur');
+});
+
+Route::get('/manajer_chart_calonanak', function () {
+    return view('layouts.manajer_chart_calonanak');
+});
+Route::get('/manajer_chart_anakasuh', function () {
+    return view('layouts.manajer_chart_anakasuh');
+});
+
+Route::get('/manajer_chart_keuangan', function () {
+    return view('layouts.manajer_chart_keuangan');
+});
+
+
+//END MANAJER
+
+
+///START CUSTOMER SERVICE
+Route::get('/cs_form_donatur', function () {
+    return view('layouts.cs_form_donatur');
+});
+
+Route::get('/cs_home', function () {
+    return view('layouts.cs_home');
+});
+
+// END CUSTOMER
 
 // Route::get('/home2', function () {
 //     return view('layouts.home2');

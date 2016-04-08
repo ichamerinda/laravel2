@@ -1,4 +1,4 @@
-@extends('includes.donatur_header')
+@extends('includes.header')
 @section('content')
 
 <section class="wrapper" style='margin-top:60px;display:inline-block;width:100%;padding:15px 0 0 15px;'>
@@ -75,6 +75,6 @@
                 </section> <!-- END class="wrapper"  --> -->
 
 <script type="text/javascript">
-    $($('ul.wraplist li')[2]).addClass('open');
+    $($('ul.wraplist li')[6]).addClass('open');
 </script>
 @endsection

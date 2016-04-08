@@ -21,6 +21,8 @@
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/apple-touch-icon-144-precomposed.png">    <!-- For iPad Retina display -->
 
 
+
+
         <!-- CORE CSS FRAMEWORK - START -->
         <link href="assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" media="screen"/>
         <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -53,9 +55,7 @@
         <!-- END CONTAINER -->
         <!-- LOAD FILES AT PAGE END FOR FASTER LOADING -->
 
-
         <!-- CORE JS FRAMEWORK - START --> 
-        
         <script src="assets/js/jquery-2.1.4.js" type="text/javascript"></script> 
         <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script> 
         <script src="assets/js/jquery.easing.min.js" type="text/javascript"></script> 
@@ -64,39 +64,36 @@
         <script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js" type="text/javascript"></script> 
         <script src="assets/plugins/viewport/viewportchecker.js" type="text/javascript"></script>  
         <!-- CORE JS FRAMEWORK - END --> 
-
-    <script type="text/javascript">
+        
+        <script type="text/javascript">
         var state = true;
         $("document").ready(function(){
-            $("#collapse2").hide()
-          
-            $("#next").click(function(){
+            $("#collapse_rekom").hide()
+              $("#collapse_tdk_rekom").hide()
+            $("#tdk_rekom").click(function(){
+                 $("#collapse_rekom").hide()
                 if(state){
-                    $("#collapse").hide()
-                    $("#collapse2").show()
+                    $("#collapse_rekom").hide()
+                    $("#collapse_tdk_rekom").show()
                 }else{
-                    $("#collapse").hide()
-                    $("#collapse2").show()
+                  
+                    $("#collapse_tdk_rekom").show()
                 }
                 state=!state;
             });
-
-            $("#back").click(function(){
-                if(state){
-                    $("#collapse2").hide()
-                    $("#collapse").show()
-                   
+            $("#rekom").click(function(){
+                 $("#collapse_tdk_rekom").hide()
+               if(state){
+                    $("#collapse_tdk_rekom").hide()
+                    $("#collapse_rekom").show()
                 }else{
-                    $("#collapse2").hide()
-                    $("#collapse").show()
-                    
+                   
+                    $("#collapse_rekom").show()
                 }
                 state=!state;
             });
         });
     </script>
-
-
     </head>
     <!-- END HEAD -->
 
@@ -105,6 +102,7 @@
         <!-- START TOPBAR -->
         <div class='page-topbar '>
             <div class='logo-area'>
+
             </div>
             <div class='quick-area'>
                 <div class='pull-left'>
@@ -113,7 +111,9 @@
                             <a href="#" data-toggle="sidebar" class="sidebar_toggle">
                                 <i class="fa fa-bars"></i>
                             </a>
-                        </li>     
+                        </li>
+                       
+                        
                     </ul>
                 </div>      
                 <div class='pull-right'>
@@ -197,16 +197,16 @@
 
 
                         <li class=""> 
-                            <a href="home">
+                            <a href="cs_home">
                                 <i class="fa fa-dashboard"></i>
                                 <span class="title">Dashboard</span>
                             </a>
                         </li>
                         
                         <li class=""> 
-                            <a href="admin_form_calonanak">
+                            <a href="cs_form_donatur">
                                 <i class="fa fa-th"></i>
-                                <span class="title">Form Anak</span>
+                                <span class="title">Form Donatur</span>
                                 <!-- <span class="label label-orange nosubmenu">HOT</span> -->
                             </a>
                         </li>
@@ -231,25 +231,14 @@
                         </li>
                        
                         <li class=""> 
-                            <a href="javascript:;">
+                            <a href="admin_laporan_keuangan">
                                 <i class="fa fa-suitcase"></i>
-                                <span class="title">Keuangan</span>
+                                <span class="title">Laporan Keuangan</span>
                                 <span class="arrow "></span>
                             </a>
-                            <ul class="sub-menu" >
-                                <li>
-                                    <a class="" href="admin_form_keuangan">Form Keuangan</a>
-                                </li>
-                                <li>
-                                    <a class="" href="admin_tabel_keuangan">Tabel Keuangan</a>
-                                </li>
-                                <li>
-                                    <a class="" href="admin_laporan_keuangan">Laporan Keuangan</a>
-                                </li>
-                                <li>
-                            </ul>
                         </li>
-                         <li class=""> 
+                        
+                        <li class=""> 
                             <a href="javascript:;">
                                 <i class="fa fa-bar-chart"></i>
                                 <span class="title">Charts</span>
@@ -270,7 +259,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <!-- 
+                        
                         <li class=""> 
                             <a href="javascript:;">
                                 <i class="fa fa-map-marker"></i>
@@ -289,7 +278,7 @@
                                 </li>
                             </ul>
                         </li>
- -->
+
 
                     </ul>
 
